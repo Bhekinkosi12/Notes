@@ -14,7 +14,7 @@ namespace Notes
 
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            var note = (Note)BindingContext;
+            var note = this.BindingContext(Note);
             note.Date = DateTime.UtcNow;
             await App.Database.SaveNoteAsync(note);
             await Navigation.PopAsync();
