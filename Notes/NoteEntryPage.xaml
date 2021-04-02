@@ -21,9 +21,10 @@
     </ContentPage.Resources>
 
     <StackLayout Margin="{StaticResource PageMargin}">
-        <Editor Placeholder="Enter your note"
+        <Editor Placeholder="Take down your notes"
                 Text="{Binding Text}"
                 HeightRequest="100" />
+      
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
